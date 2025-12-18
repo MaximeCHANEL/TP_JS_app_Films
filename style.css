@@ -1,0 +1,143 @@
+/* ===== RESET ===== */
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+background-color: #f4f6f8;
+padding: 40px;
+color: #333;
+}
+
+
+/* ===== BARRE DE RECHERCHE ===== */
+.search-container {
+max-width: 500px;
+margin: 0 auto 40px auto;
+}
+
+
+.search-container input {
+width: 100%;
+padding: 14px 18px;
+border-radius: 30px;
+border: 1px solid #ccc;
+font-size: 16px;
+outline: none;
+transition: border 0.3s, box-shadow 0.3s;
+}
+
+
+.search-container input:focus {
+border-color: #4f46e5;
+box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+}
+
+
+/* ===== CONTENEUR DES CARTES ===== */
+.cards-container {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+gap: 25px;
+}
+
+
+/* ===== CARTE ===== */
+.card {
+background-color: #ffffff;
+border-radius: 16px;
+overflow: hidden;
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.card:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+.card img {
+width: 100%;
+object-fit: cover;
+}
+
+
+.card-content {
+padding: 16px;
+}
+
+
+.card-title {
+font-size: 18px;
+margin-bottom: 6px;
+}
+
+
+.card-year {
+display: block;
+font-size: 14px;
+color: #6b7280;
+margin-bottom: 10px;
+}
+
+
+.card-description {
+font-size: 15px;
+line-height: 1.4;
+color: #444;
+}
+
+/* ===== BOUTON DE RECHERCHE ===== */
+.search-container {
+  display: flex;
+  gap: 10px;
+}
+
+.search-container button {
+  padding: 14px 22px;
+  border-radius: 30px;
+  border: none;
+  background-color: #4f46e5;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.search-container button:hover {
+  background-color: #4338ca;
+  transform: scale(1.05);
+}
+
+/* ===== BOUTONS DE PAGINATION ===== */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.pagination button {
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #4f46e5;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* ===== MESSAGE FILM NON TROUVER ===== */
+.cards-container .not_result {
+    color: red;
+    font-weight: 900;
+    text-align: center;
+    font-size: large;
+}
